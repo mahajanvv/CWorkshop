@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_id"
+            android:textStyle="bold"
+            android:text="ID of Entry"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_name"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:text="name of paticipant"
+            android:padding="5dp"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_email"
+            android:text="Email"
+            android:textSize="14dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_phone"
+            android:text="Phone"
+            android:textSize="14dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_remaininig"
+            android:text="Remaining"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idonline_entry_membername"
+            android:text="member name"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

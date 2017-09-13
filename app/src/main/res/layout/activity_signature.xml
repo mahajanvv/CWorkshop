@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dontknow.cworkshop.Signature"
+    android:background="#d3d3d3">
+
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_margin="10dp"
+        app:penColor="@android:color/black"
+        app:clearOnDoubleClick="true"
+        android:background="@drawable/cornerradius"
+        />
+
+
+    <EditText
+        android:id="@+id/idRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/cornerradius"
+        android:hint="Remaining Money"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/signature_pad"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@color/cardview_dark_background"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/idclear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Signature"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sig_btn"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/idRemaining"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/idOnlineEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:background="@drawable/sig_btn2"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/idclear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+         />
+
+
+</RelativeLayout>

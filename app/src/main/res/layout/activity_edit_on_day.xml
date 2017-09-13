@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dontknow.cworkshop.EditOnDay">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/ideditid"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/ideditname"
+        android:layout_below="@+id/ideditid"
+        android:text="name"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ideditname"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/ideditemail"
+        android:text="email"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ideditemail"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/ideditphone"
+        android:text="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:inputType="number"
+        android:layout_below="@+id/ideditphone"
+        android:id="@+id/ideditRemaining"
+        android:hint="Remaining Amount"
+        android:textAlignment="center"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ideditRemaining"
+        android:padding="5dp"
+        />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session2"
+        android:layout_below="@+id/switch1"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session3"
+        android:layout_below="@+id/switch2"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session4"
+        android:layout_below="@id/switch3"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ideditsubmit"
+        android:text="Submit"
+        android:background="@drawable/edit_btn1"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/switch4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ideditcancel"
+        android:text="Cancel"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/edit_btn2"
+        android:layout_below="@+id/switch4"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

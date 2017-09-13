@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#381904"
+    tools:context="com.example.dontknow.cworkshop.MakeEntries">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/idFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_btn"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:id="@+id/idMidName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idFirstName"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_btn"
+                android:ems="10"
+                android:hint="Middle Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:id="@+id/idLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idMidName"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="@drawable/input_btn"/>
+
+            <EditText
+                android:id="@+id/idEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idLastName"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="@drawable/input_btn"
+                />
+
+            <EditText
+                android:id="@+id/idPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idEmailAddress"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="@drawable/input_btn"
+                />
+
+            <EditText
+                android:id="@+id/idCollegeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idPhone"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="College Name In Short"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="@drawable/input_btn"
+                />
+
+            <EditText
+                android:id="@+id/idYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idCollegeName"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Year Of Study"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="@drawable/input_btn"/>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/idNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        />
+
+</RelativeLayout>
